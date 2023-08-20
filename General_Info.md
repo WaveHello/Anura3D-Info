@@ -7,7 +7,9 @@ The purpose of this documents is to provide a starting point to navigate through
 
 
 ## Categories vs. Channels 
+
 ### Categories
+
 ### Channels
 
 ## Video/Audio Chattings
@@ -16,6 +18,8 @@ The purpose of this documents is to provide a starting point to navigate through
 
 ## Helpful links
 
+### Linking Github with Discord
+1) Quick video on using webhooks to integrate discord notifications into a discord category.<br> Link: https://www.youtube.com/watch?v=-KDQqWNK3Tw
 ## FAQ
 
 ### 1) **Q)** Why is it called **The Pond**
