@@ -90,7 +90,8 @@ The second option is to change the notification settings for a specific Category
 2) Click **Notification Settings**
    
 4) Change the settings to what you want
-   3) ![Alt text](image-13.png)
+
+![Alt text](image-13.png)
 
 ### Third option: Turn on Do not disturb. 
  This option has the disadvantage of stopping messages being delivered from all servers and from personal messages.<br>
