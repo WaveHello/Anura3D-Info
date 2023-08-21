@@ -19,7 +19,6 @@ The purpose of **The Pond** is as follows:
    * Fluid Mechanics
 
 ## Categories vs. Channels 
-
 ### Categories
 A Category is basically a folder. It can contain Channels, be that audio or text. 
 
