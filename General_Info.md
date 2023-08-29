@@ -15,7 +15,7 @@ The purpose of **The Pond** is as follows:
    * Github
    * Anura3D
 
-## Categories vs. Channels 
+## Categories vs. Channels
 ### Categories
 A Category is basically a folder. It can contain Channels, be that audio or text. 
 
