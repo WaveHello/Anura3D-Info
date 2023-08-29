@@ -24,8 +24,7 @@ A Category is basically a folder. It can contain Channels, be that audio or text
 
 ### Channels
 Channels are the actual chat rooms or audio/video rooms. They can exist inside of Categories or independently in the server. (:warning:**All channels should be created inside a Category. This will help organization and scrolling**:warning:) All channels have a purpose. A short snippet about the purpose of the channel is located at the top of the channel (See below).
-![Alt text](image-9.png)
-
+<img src="image-9.png" alt="image-9" width="1000"/>
 
 If you click on the snippet the full message appears (See below).
 ![Alt text](image-11.png)
@@ -76,7 +75,7 @@ The first option is to change your server notification settings. <br>
 2) Click **Notification Settings** <br>
    <img src="image-7.png" alt="image-7" width="300"/>
 
-3) Selecting **Only @mentions**,  means you'll only see updates when someone sends a message with **@"Your Profile Name"** (This is recommended). Selecting **Nothing** stops all notifications from this server only.
+3) Selecting **Only @mentions**,  means you'll only see updates when someone sends a message with **@"Your Profile Name"** (This is recommended). Selecting **Nothing** stops all notifications from this server only. <br>
 <img src="image-8.png" alt="image-8" width="500"/>
 
 ---
@@ -89,8 +88,8 @@ The second option is to change the notification settings for a specific Category
 
 2) Click **Notification Settings**
    
-4) Change the settings to what you want
-   3) ![Alt text](image-13.png)
+4) Change the settings to what you want <br>
+<img src="image-13.png" alt="image-13" width="500"/>
 
 ### Third option: Turn on Do not disturb. 
  This option has the disadvantage of stopping messages being delivered from all servers and from personal messages.<br>
@@ -98,9 +97,9 @@ The second option is to change the notification settings for a specific Category
 #### To do this:
 
 1) Click your user profile (Figure 1) in the bottom left.<br>
-<img src="image-1.png" alt="drawing" width="200"/>
+<img src="image-1.png" alt="drawing" width="300"/>
 1) When you click on it the following menu should appear.<br>
-<img src="image-2.png" alt="image-2" width="200"/>
+<img src="image-2.png" alt="image-2" width="300"/>
 1) Click the "Online button"<br>
 <img src="image-3.png" alt="image-3" width="400"/>
 1) Select "Do not disturb"<br>
