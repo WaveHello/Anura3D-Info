@@ -13,6 +13,7 @@ The purpose of **The Pond** is as follows:
    * Finite Element Method (FEM)
    * Material Point Method (MPM)
    * Github
+   * Anura3D
 
 ## Categories vs. Channels 
 ### Categories
