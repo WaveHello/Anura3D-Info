@@ -47,7 +47,7 @@ The textbox for Discord largely includes basic markdown text capabilities. Markd
 [Link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). It isn't necessary to use these functions, but it might be helpful (and I think it's kind of cool :sunglasses:).
 
 ### Building a Discord Bot
-Longer form video on how to create a discord bothttps://www.youtube.com/watch?v=SPTfmiYiuok
+Longer form video on how to create a discord bot https://www.youtube.com/watch?v=SPTfmiYiuok
 
 ## FAQ
 
@@ -85,14 +85,8 @@ The second option is to change the notification settings for a specific Category
 
 2) Click **Notification Settings**
    
-<<<<<<< HEAD
 4) Change the settings to what you want <br>
 <img src="image-13.png" alt="image-13" width="500"/>
-=======
-4) Change the settings to what you want
-
-![Alt text](image-13.png)
->>>>>>> 5840d26294fc0bd2e08c3ae03afb5a1b317789f2
 
 ### Third option: Turn on Do not disturb. 
  This option has the disadvantage of stopping messages being delivered from all servers and from personal messages.<br>
