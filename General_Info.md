@@ -12,11 +12,7 @@ The purpose of **The Pond** is as follows:
 4) Increase the rate at which new members become familar with numerical modelling and soil mechanics, including but not limited to:
    * Finite Element Method (FEM)
    * Material Point Method (MPM)
-   * Smooth Particle Hydrodynamics (SPH)
-   * Continuum Mechanics
-   * Elastic and Plastic Mechanics
-   * Critical State Soil Mechanics (CSSM))
-   * Fluid Mechanics
+   * Github
 
 ## Categories vs. Channels 
 ### Categories
