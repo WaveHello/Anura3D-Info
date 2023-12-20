@@ -19,5 +19,9 @@ Future work includes adding more information on:
 * Discord
 * Fortran
 * Parallel Computing
+* Elasticity (Textbooks, good websites)
+* Plasticity (Textbooks, good websites)
+* Material Point Method (Textbooks, good websites, example code)
+* Seminal Geomechanics MPM papers 
  
 
