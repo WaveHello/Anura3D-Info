@@ -1,9 +1,12 @@
 # Information on Fortran
 
+## Fortran Trivia
+* The name came from **FOR**mula **TRAN**slation
+  
 ## General Coding Help
 
 1) [Compiled vs. Interpreted Language](https://www.geeksforgeeks.org/difference-between-compiled-and-interpreted-language/)
-   * Info on the difference between a compiled (eg. Fortran, C++) and interpreted (eg. MATLAB, python) language 
+   * Info on the difference between a compiled (eg. Fortran, C++) and interpreted (eg. MATLAB, python) language
 
 2) [Quick Info on Object Orientated Programming (OOP) in Fortan](https://www.math.fsu.edu/~dmandel/Fortran/Chap6.pdf)
    * Summary: Short introduction to OOP in Fortran. Has some good examples and details.
