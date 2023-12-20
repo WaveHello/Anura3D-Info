@@ -1,6 +1,5 @@
 # Information on Fortran
 
-
 ## General Coding Help
 
 1) [Compiled vs. Interpreted Language](https://www.geeksforgeeks.org/difference-between-compiled-and-interpreted-language/)
@@ -23,7 +22,7 @@
     * Summary: (Not watched yet. just saw it)
   
 ### Websites
-1) [Fortran Blog](https://fortran-lang.discourse.group/)
+1) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
 
 2) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
    * Info on how to get started learning Fortran
@@ -72,7 +71,7 @@
     * Lots of details might not be the best for a first intro
 
 ### Videos
-1) [Video - Damian Rouson Parall Fortran](https://www.youtube.com/watch?v=IWHRuJ7D70I)
+1) [Video - Damian Rouson Parallel Fortran](https://www.youtube.com/watch?v=IWHRuJ7D70I)
 
 
 <!-------------------------- End of Parallel Computing ------------------->
