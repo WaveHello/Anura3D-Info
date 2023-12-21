@@ -21,7 +21,7 @@ A Category is basically a folder. It can contain Channels, be that audio or text
 
 ### Channels
 Channels are the actual chat rooms or audio/video rooms. They can exist inside of Categories or independently in the server. (:warning:**All channels should be created inside a Category. This will help organization and scrolling**:warning:) All channels have a purpose. A short snippet about the purpose of the channel is located at the top of the channel (See below).
-<img src="Images/image-9.png" alt="image-9" width="1000"/>
+<img src="Images/image-9.png" alt="Discord Channel Homescreen" width="1000"/>
 
 If you click on the snippet the full message appears (See below).
 ![Alt text](Images/image-11.png)

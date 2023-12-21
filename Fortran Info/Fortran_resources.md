@@ -1,4 +1,4 @@
-# Information on Fortran
+# Fortran Resources
 
 ## Fortran Trivia
 * The name came from **FOR**mula **TRAN**slation
