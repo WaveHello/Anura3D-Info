@@ -1,0 +1,49 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{code_documentation}[2020/01/01]
+
+
+\RequirePackage {listings}      % Provides ability to define code environments
+\RequirePackage [T1]{fontenc}   % 
+\RequirePackage {xcolor}        %
+\RequirePackage {lmodern}       %
+
+\RequirePackage {lingmacros}    % 
+\RequirePackage {tree-dvips}    % 
+
+
+%---------- Define colors ----------------
+
+% Fortran Code Colors
+\definecolor{keywordcolor}{RGB}{0,0,255}
+\definecolor{commentcolor}{RGB}{0,128,0}
+
+
+%---------- Define lstlisting styles -----
+
+% Fortan lstlisting style
+\lstdefinestyle{fortranStyle}{
+    language=[90]Fortran,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{keywordcolor},
+    commentstyle=\color{commentcolor},
+    morecomment=[l]{!\ },
+    frame=single,
+    breaklines=true,
+}
+
+%---------- Define Environments ----------
+
+% Fortran Subroutine env
+\lstnewenvironment{fortransubroutine}[1][]
+{
+    \lstset{style=fortranStyle, caption=#1, label=#1}
+}
+{} % Denotes end of lst environment
+
+% Fortran Function env
+\lstnewenvironment{fortranfunction}[1][]
+{
+    \lstset{style=fortranStyle, caption=#1, label=#1}
+}
+{} % Denotes end of lst environment
+
