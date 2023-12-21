@@ -8,7 +8,9 @@ The folders are sectioned as follows:
 Contains information on using and modifying the Discord.
 
 ## Fortran Info 
+
 * Contains information on getting started with Fortran. Including links to books, websites and videos that are aimed at learning Fortran. Information on parallel computing and general coding is contained here.
+* Anura3D Code Style Guide
 * An Anura3D help guide (eg. Information on adding params to CPS file, how to debug, etc)
 * Guide to Hardcoding an External Soil Model (ESM) in Anura3D
   
