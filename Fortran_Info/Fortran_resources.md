@@ -1,7 +1,7 @@
 # Fortran Resources
 
 ## Fortran Trivia
-* The name came from **FOR**mula **TRAN**slation
+* The name came from **FOR**mula **TRAN**slation. Built by scientists and engineers for scientists and engineers
   
 ## General Coding Help
 
@@ -28,17 +28,24 @@
 
 4) [Fortran Standard Library (stdlib)](https://github.com/fortran-lang/stdlib?tab=readme-ov-file)
      * The Fortran Standard, as published by the ISO (https://wg5-fortran.org/), does not have a Standard Library. The goal of this project is to provide a community driven and agreed upon *de facto* "standard" library for Fortran, called a Fortran Standard Library (`stdlib`). We have a rigorous process how `stdlib` is developed as documented in our [Workflow](WORKFLOW.md). `stdlib` is both a specification and a reference implementation. We are cooperating with the Fortran Standards Committee (e.g., the effort [started](https://github.com/j3-fortran/fortran_proposals/issues/104) at the J3 committee repository) and the plan is to continue working with the Committee in the future (such as in the step 5. in the [Workflow](WORKFLOW.md) document), so that if the Committee wants to standardize some feature already available in `stdlib`, it would base it on `stdlib`'s implementation.
+  
+5) [Support for Fortran in VS Code](https://github.com/fortran-lang/vscode-fortran-support)
+     * Adds **ALOT** of features to VS Code to support writing Fortran
+     * Including (Not limited to):
+        * Syntax highlighting (Free and Fixed forms)
+        * Hover support, Signature help and Auto-completion
+        * GoTo/Peek implementation and Find/Peek references
+        * Project-wide and Document symbol detection and Renaming
+        * [Native Language Server integration](#language-server-integration) with [`fortls`](https://fortls.fortran-lang.org)
+        * [Linting support](#linting): GNU's [`gfortran`](https://gcc.gnu.org/wiki/GFortran), Intel's [`ifort`](https://www.intel.com/content/www/us/en/developer/tools/oneapi   fortran-compiler.html), `ifx`, NAG's [`nagfor`](https://www.nag.co.uk/nagfor/)
+        * [Interactive Debugger with UI](#debugging)
+        * [Formatting](#formatting) with [findent](https://github.com/gnikit/findent-pypi) or [fprettify](https://github.com/pseewald/fprettify)
+        * [Code snippets](#snippets) (more can be defined by the user [see](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets)) 
 
-```mermaid
-flowchart TB
-	start[Is the Jacobian matrix available?]
-	start--Yes-->middle1[Is flexibility required?]
-	start--No-->middle2[Is flexibility required?]
-	middle1--Yes-->b1[<a href='https://fortran-lang.github.io/minpack/proc/hybrj.html'>hybrj</a>]
-	middle1--No-->b2[<a href='https://fortran-lang.github.io/minpack/proc/hybrj1.html'>hybrj1</a>]
-	middle2--Yes-->b3[<a href='https://fortran-lang.github.io/minpack/proc/hybrd.html'>hybrd</a>]
-	middle2--No-->b4[<a href='https://fortran-lang.github.io/minpack/proc/hybrd1.html'>hybrd1</a>]
-```
+6) [Build Fotran Unit tests (test-drive)](https://github.com/fortran-lang/test-drive)
+     * "This project offers a lightweight, procedural [unit testing](https://en.wikipedia.org/wiki/Unit_testing) framework based on nothing but standard Fortran. Integration with meson, cmake and Fortran package manager (fpm) is available. Alternatively, the testdrive.F90 source file can be redistributed in the project's testsuite as well."
+     * Basically it lests you test your code and find bugs
+
 <!------------------------------------------------------------- End of Fortran Add-Ons ---------------------------------------------------------------->
 
 ## Fortran Code Tutorials
@@ -56,18 +63,37 @@ flowchart TB
      * Start here for learning Fortan
      * Links to other good resources
   
-2) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
+2) [Fortran Langauge Homepage](https://fortran-lang.org/)
+     * Home page for the Fortran language
+     * A ton of good information (The learn Fortran link from above is a subdirectory of this website)
+   
+3) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
      * Forum for discussions on Fortran
    
-3) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
+4) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
      * Info on how to get started learning Fortran
   
-4) [Wikipedia: Fortran](https://en.wikipedia.org/wiki/Fortran)
+5) [Wikipedia: Fortran](https://en.wikipedia.org/wiki/Fortran)
      * Info on the development and history of fortran
      * Info on different versions of Fortran 
      * Info on Modern Fortran (Which started in 2003 with the addtion of object-orientated programming)
 
 <!------------------------------------------------------------- End of Fortran Code Tutorials  -------------------------------------------------------->
+
+## Fortran Mailing/Discussion Groups
+1) [Fortan-lang Group.io](https://groups.io/g/fortran-lang)
+     * Fortran Email listing - Supported by the Language Homepage
+
+2) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
+     * Forum for discussions on Fortran
+     * Good amount off information and experienced users
+
+3) [Fortran Reddit Page](https://www.reddit.com/r/fortran/)
+     * Lots of beginner questions and lots of new users of Fortran
+     * Good place to ask questions
+     * Has links to some really good information in an easy-access format
+
+ <!------------------------------------------------------------ End of Fortran Mailing/Discussion Groups ---------------------------------------------->
 
 ## Learn CMake
 1) [Emily's Website - Getting started with CMake for Fortran](https://www.atomwitch.net/2022/04/02/cmake-fortran.html)
@@ -111,6 +137,8 @@ flowchart TB
 
 ## People to search for
 
-1) Damian Rousen - Leader in HPC Fortran and wrote a lot of the books referenced. Part of the committee setting  the new standards and creating the new features for Fortran
+1) [Damian Rousen](https://crd.lbl.gov/divisions/amcr/computer-science-amcr/class/members/group-lead/damian-rouson/) - Leader in HPC Fortran and wrote a lot of the books referenced. Part of the committee setting  the new standards and creating the new features for Fortran
+   
+2) [Milan Curcic](https://milancurcic.com/) - Leader in HPC Fortran and wrote Modern Fortran - Building efficient parallel applications
 
 <!-------------------------- End of People Search ----------------------->
