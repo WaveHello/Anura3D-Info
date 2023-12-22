@@ -10,11 +10,38 @@
 
 2) [Quick Info on Object Orientated Programming (OOP) in Fortan](https://www.math.fsu.edu/~dmandel/Fortran/Chap6.pdf)
    * Summary: Short introduction to OOP in Fortran. Has some good examples and details.
-<!-------------------------- End of Coding Help--------------------------->
 
+<!------------------------------------------------------------- End of General Coding Help ------------------------------------------------------------>
 
-## Helpful Fortran Links
+## Fortran Add-Ons
+1) [FORtan Documenter (FORD)](https://github.com/Fortran-FOSS-Programmers/ford?tab=readme-ov-file)
+     * Automatically generates documentation for Fortan code
+  
+2) [Fortran Package Mangager (FPM)](https://fpm.fortran-lang.org/)
+     * [GitHub Link](https://github.com/fortran-lang/fpm)
+     * Summary: "Fortran Package Manager (fpm) is a package manager and build system for Fortran. Its key goal is to improve the user experience of Fortran programmers. It does so by making it easier to build your Fortran program or library, run the executables, tests, and examples, and distribute it as a dependency to other Fortran projects. Fpm's user interface is modeled after Rust's Cargo, so if you're familiar with that tool, you will feel at home with fpm. Fpm's long term vision is to nurture and grow the ecosystem of modern Fortran applications and libraries."
+  
+3) [Running Fortran in Jupyter Notebooks](https://lfortran.org/)
+     * Beta service that allows you to run Fortran in an interactive environment - Jupyter Notebook.
+     * Might be helpful for initial code testing
+     * Haven't tried it yet - watched a video on it
 
+4) [Fortran Standard Library (stdlib)](https://github.com/fortran-lang/stdlib?tab=readme-ov-file)
+     * The Fortran Standard, as published by the ISO (https://wg5-fortran.org/), does not have a Standard Library. The goal of this project is to provide a community driven and agreed upon *de facto* "standard" library for Fortran, called a Fortran Standard Library (`stdlib`). We have a rigorous process how `stdlib` is developed as documented in our [Workflow](WORKFLOW.md). `stdlib` is both a specification and a reference implementation. We are cooperating with the Fortran Standards Committee (e.g., the effort [started](https://github.com/j3-fortran/fortran_proposals/issues/104) at the J3 committee repository) and the plan is to continue working with the Committee in the future (such as in the step 5. in the [Workflow](WORKFLOW.md) document), so that if the Committee wants to standardize some feature already available in `stdlib`, it would base it on `stdlib`'s implementation.
+
+```mermaid
+flowchart TB
+	start[Is the Jacobian matrix available?]
+	start--Yes-->middle1[Is flexibility required?]
+	start--No-->middle2[Is flexibility required?]
+	middle1--Yes-->b1[<a href='https://fortran-lang.github.io/minpack/proc/hybrj.html'>hybrj</a>]
+	middle1--No-->b2[<a href='https://fortran-lang.github.io/minpack/proc/hybrj1.html'>hybrj1</a>]
+	middle2--Yes-->b3[<a href='https://fortran-lang.github.io/minpack/proc/hybrd.html'>hybrd</a>]
+	middle2--No-->b4[<a href='https://fortran-lang.github.io/minpack/proc/hybrd1.html'>hybrd1</a>]
+```
+<!------------------------------------------------------------- End of Fortran Add-Ons ---------------------------------------------------------------->
+
+## Fortran Code Tutorials
 ### Videos
 1) [Modern Fortran Tutorial Videos](https://www.youtube.com/watch?v=05N6PecJw-E&list=PLOU8LxhyFylLS298Sea2-gYvO5Lj8HZsP)
     * Helpful video playlist on features of Fortran 
@@ -23,30 +50,34 @@
   
 2)  [Learning Fortran in 2023-Video](https://www.youtube.com/watch?v=PvUQndB8R9s)
     * Summary: (Not watched yet. just saw it)
-  
+
 ### Websites
-1) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
-
-2) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
-   * Info on how to get started learning Fortran
+1) [Learn Fotran](https://fortran-lang.org/learn/)
+     * Start here for learning Fortan
+     * Links to other good resources
   
-3) [Wikipedia: Fortran](https://en.wikipedia.org/wiki/Fortran)
-   * Info on the development and history of fortran
-   * Info on different versions of Fortran 
-   * Info on Modern Fortran (Which started in 2003 with the addtion of object-orientated programming)
+2) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
+     * Forum for discussions on Fortran
+   
+3) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
+     * Info on how to get started learning Fortran
+  
+4) [Wikipedia: Fortran](https://en.wikipedia.org/wiki/Fortran)
+     * Info on the development and history of fortran
+     * Info on different versions of Fortran 
+     * Info on Modern Fortran (Which started in 2003 with the addtion of object-orientated programming)
 
-### Fortran Add-Ons
-1) [Running Fortran in Jupyter Notebooks](https://lfortran.org/)
-   * Beta service that allows you to run Fortran in an interactive environment - Jupyter Notebook.
-   * Might be helpful for initial code testing
-   * Haven't tried it yet - watched a video on it
+<!------------------------------------------------------------- End of Fortran Code Tutorials  -------------------------------------------------------->
 
-2) [Fortran Package Mangager (FPM)](https://fpm.fortran-lang.org/)
-    * [GitHub Link](https://github.com/fortran-lang/fpm)
-    * Summary: "Fortran Package Manager (fpm) is a package manager and build system for Fortran. Its key goal is to improve the user experience of Fortran programmers. It does so by making it easier to build your Fortran program or library, run the executables, tests, and examples, and distribute it as a dependency to other Fortran projects. Fpm's user interface is modeled after Rust's Cargo, so if you're familiar with that tool, you will feel at home with fpm. Fpm's long term vision is to nurture and grow the ecosystem of modern Fortran applications and libraries."
+## Learn CMake
+1) [Emily's Website - Getting started with CMake for Fortran](https://www.atomwitch.net/2022/04/02/cmake-fortran.html)
+   * "This guide aims to teach you how to use the CMake build system, with a special focus on Fortran (there are many fine C++ tutorials already around, but not many on Fortran)"
+   * Includes links to more resources
 
-<!-------------------------- End of Fortran Links ------------------------>
+2) [Fortran with CMake](https://www.youtube.com/watch?v=Tl3Ph-4dMTI)
+   * Short tutorial video on using Fortran with CMake (haven't watched)
 
+<!------------------------------------------------------------- End of Learn CMake -------------------------------------------------------------------->
 
 ## Helpful Books
 
@@ -64,11 +95,10 @@
    
    * [Accompaning Code](https://github.com/sourceryinstitute/Scientific-Software-Design)
    * Summary: Book on the design and implementation of scientific software (By some of the same people that helped for the Modern Fortran Books)
-
-<!--------------------------- End of Books ------------------------------->
+  
+<!------------------------------------------------------------- End of Books -------------------------------------------------------------------------->
 
 ## Parallel Computing
-
 ### Articles
 1) [Intro to parallel computing annd high performance computing (HPC)](https://hpc.llnl.gov/documentation/tutorials/introduction-parallel-computing-tutorial)
     * Lots of details might not be the best for a first intro
@@ -76,8 +106,7 @@
 ### Videos
 1) [Video - Damian Rouson Parallel Fortran](https://www.youtube.com/watch?v=IWHRuJ7D70I)
 
-
-<!-------------------------- End of Parallel Computing ------------------->
+<!------------------------------------------------------------- End of Parallel Computing ------------------------------------------------------------->
 
 
 ## People to search for

@@ -1,49 +1,88 @@
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{code_documentation}[2020/01/01]
+\NeedsTeXFormat{LaTeX2e}[2020/01/01]
+\ProvidesPackage{code_documentation}
 
-
+\RequirePackage {tree-dvips}    % Support for building text trees
 \RequirePackage {listings}      % Provides ability to define code environments
-\RequirePackage [T1]{fontenc}   % 
-\RequirePackage {xcolor}        %
-\RequirePackage {lmodern}       %
-
-\RequirePackage {lingmacros}    % 
-\RequirePackage {tree-dvips}    % 
+\RequirePackage[dvipsnames]{xcolor}        % Provides support for setting colors of text, docs
+\RequirePackage {mdframed}
+\RequirePackage {lmodern}       % Provides access to the latin modern font family
+\RequirePackage [T1]{fontenc}   % Provides support for commonly used english characters w/ accents
+\RequirePackage{amsmath, amsthm,
+            amssymb, amsfonts}  % For writing math
+\RequirePackage{thmtools}       % For mathe thereoms
+\RequirePackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % Used to create "post-it" comments
+\usepackage{xargs}% Use more than one optional parameter in a new commands
 
 
 %---------- Define colors ----------------
 
 % Fortran Code Colors
-\definecolor{keywordcolor}{RGB}{0,0,255}
-\definecolor{commentcolor}{RGB}{0,128,0}
+\definecolor{commentcolor}{RGB}{0,128,0} % Fortran Comment greenn
+\definecolor{myblue}{RGB}{0,0,255} % Define your custom blue color
+\colorlet{LightOrange}{orange!15}
+\colorlet{LightGreen}{green!15}
+\colorlet{LightPurple}{blue!40!red!10!white}
+\colorlet{LightRed}{red!30!white}
+\colorlet{LightYellow}{yellow!30!white}
+\colorlet{LightBlue}{blue!30!white}
 
 
-%---------- Define lstlisting styles -----
-
+%---------- Define Styles ----------------
 % Fortan lstlisting style
 \lstdefinestyle{fortranStyle}{
-    language=[90]Fortran,
-    basicstyle=\ttfamily,
-    keywordstyle=\color{keywordcolor},
-    commentstyle=\color{commentcolor},
-    morecomment=[l]{!\ },
-    frame=single,
-    breaklines=true,
+    language=[90]Fortran,               % Set language to Fortran 90
+    basicstyle=\ttfamily,               % Set regular code style
+    keywordstyle=\color{myblue},        % Set Keyword style
+    commentstyle=\color{commentcolor},  % Comment style
+    morecomment=[l]{!\ },               % Spacing for comment
+    frame=single,                       % Creat box
+    breaklines=true,                    %
 }
+
 
 %---------- Define Environments ----------
 
 % Fortran Subroutine env
-\lstnewenvironment{fortransubroutine}[1][]
+\lstnewenvironment{fortran_subroutine_lst}[1][]
 {
     \lstset{style=fortranStyle, caption=#1, label=#1}
 }
 {} % Denotes end of lst environment
 
 % Fortran Function env
-\lstnewenvironment{fortranfunction}[1][]
+\lstnewenvironment{fortran_function_lst}[1][]
 {
     \lstset{style=fortranStyle, caption=#1, label=#1}
 }
 {} % Denotes end of lst environment
 
+% Note the default value for the first
+% argument is provided by [This is a box]
+\newenvironment{boxed_v2}[2][This is a box]
+    {\begin{center}
+    Argument 1 (\#1)=#1\\[1ex]
+    \begin{tabular}{|p{0.9\textwidth}|}
+    \hline\\
+    Argument 2 (\#2)=#2\\[2ex]
+    }
+    { 
+    \\\\\hline
+    \end{tabular} 
+    \end{center}
+    }
+
+%---------- New Commands -----------------
+
+% Create "Post-it" commands
+\newcommandx{\unsure}[2][1=]{ % Unsure Command
+    \todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}
+}
+\newcommandx{\change}[2][1=]{ % Change Command
+    \todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}
+}
+\newcommandx{\info}[2][1=]{ % Info Command
+    \todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}
+}
+\newcommandx{\improvement}[2][1=]{ % Improvement Command
+    \todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}
+}

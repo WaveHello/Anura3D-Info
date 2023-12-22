@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass[12pt]{report}
 
 % Add the import package - Enables file import
 \usepackage{import} 
@@ -6,6 +6,50 @@
 % Use import to include .sty file (style file) 
 \import{preamble/}{code_documentation.sty}
 
+% \newenvironment{boxed}[2][This is a box]
+% {\begin{center}
+% Argument 1 (\#1)=#1\\[1ex]
+% \begin{tabular}{{{!}}p{0.9\textwidth}{{!}}}
+% \hline\\
+% Argument 2 (\#2)=#2\\[2ex]
+% }
+% { 
+% \\\\\hline
+% \end{tabular} 
+% \end{center}
+% }
+\newenvironment{subroutine_desc}[1]["Enter Name here"]
+    {
+    \textbf{Subroutine} #1
+    
+    }
+    { 
+    
+    }
+
 \begin{document}
+    
     \import{sections/}{introduction.tex}
+    \begin{subroutine_desc}
+        something
+    \end{subroutine_desc}
+
+
+    
+
+    \textbf{Example 1}: Use the default value for the first argument:
+ 
+    \begin{boxed_v2}{Some preliminary text}
+    This text is \textit{inside} the environment.
+    \end{boxed_v2}
+    
+    This text is \textit{outside} the environment.
+    
+    \vskip12pt
+    
+    \textbf{Example 2}: Provide a value for the first argument:
+     
+    \begin{boxed_v2}[This is not the default value]{Some more preliminary text}
+    This text is still \textit{inside} the environment.
+    \end{boxed_v2}
 \end{document}
