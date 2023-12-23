@@ -4,7 +4,7 @@ The purpose of this repo is to hold references and links to help the on-boarding
 # Folder Breakdown
 The folders are sectioned as follows:
 
-## Dicord Info
+## Discord Info
 Contains information on using and modifying the Discord.
 
 ## Fortran Info 
