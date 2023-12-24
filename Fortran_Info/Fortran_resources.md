@@ -13,9 +13,20 @@
 
 <!------------------------------------------------------------- End of General Coding Help ------------------------------------------------------------>
 
+## Fortran Documentation
+1) [Fortran 90 Documentation](https://www.fortran90.org/)
+     * Info on the Fortran standards (Up to 2018)
+     * Answers to some common questions
+2) [Fortran 2018 Standards](https://j3-fortran.org/doc/year/18/18-007r1.pdf)
+     * Full standards for the 2018 version
+
+3) [Fortran 2023 - Added Features](https://wg5-fortran.org/N2151-N2200/N2194.pdf)
+     * Info on the features being added to Fortran 2023 compared to 2018
+
 ## Fortran Add-Ons
 1) [FORtan Documenter (FORD)](https://github.com/Fortran-FOSS-Programmers/ford?tab=readme-ov-file)
      * Automatically generates documentation for Fortan code
+     * The repo seems well maintained at this time, but there has been some concern in the past (~2020) about continued support
   
 2) [Fortran Package Mangager (FPM)](https://fpm.fortran-lang.org/)
      * [GitHub Link](https://github.com/fortran-lang/fpm)
@@ -41,6 +52,7 @@
         * [Interactive Debugger with UI](#debugging)
         * [Formatting](#formatting) with [findent](https://github.com/gnikit/findent-pypi) or [fprettify](https://github.com/pseewald/fprettify)
         * [Code snippets](#snippets) (more can be defined by the user [see](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets)) 
+        * See [Setting up vs-code-fortran-support](Setting_up_vs_code_fortran_support.md)
 
 6) [Build Fotran Unit tests (test-drive)](https://github.com/fortran-lang/test-drive)
      * "This project offers a lightweight, procedural [unit testing](https://en.wikipedia.org/wiki/Unit_testing) framework based on nothing but standard Fortran. Integration with meson, cmake and Fortran package manager (fpm) is available. Alternatively, the testdrive.F90 source file can be redistributed in the project's testsuite as well."
@@ -67,13 +79,10 @@
      * Home page for the Fortran language
      * A ton of good information (The learn Fortran link from above is a subdirectory of this website)
    
-3) [Fortran Discourse Group](https://fortran-lang.discourse.group/)
-     * Forum for discussions on Fortran
-   
-4) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
+3) [Reddit page on learning Fortran](https://www.reddit.com/r/fortran/comments/utkjf8/resources_for_getting_good_at_fortran/)
      * Info on how to get started learning Fortran
   
-5) [Wikipedia: Fortran](https://en.wikipedia.org/wiki/Fortran)
+4) [Wikipedia: Fortran](https://en.wikipedia.org/wiki/Fortran)
      * Info on the development and history of fortran
      * Info on different versions of Fortran 
      * Info on Modern Fortran (Which started in 2003 with the addtion of object-orientated programming)
@@ -116,6 +125,7 @@
 
 3) [Modern Fortran: building efficient  parallel applications](https://www.manning.com/books/modern-fortran)
    * Summary: "Modern Fortran teaches you to develop fast, efficient parallel applications using twenty-first-century Fortran. In this guide, you'll dive into Fortran by creating fun apps, including a tsunami simulator and a stock price analyzer. Filled with real-world use cases, insightful illustrations, and hands-on exercises, Modern Fortran helps you see this classic language in a whole new light."-- Page [4] of cover
+   * [Companion Code](https://github.com/modern-fortran)
   
 4) [Scientific Software Design](https://www.cambridge.org/core/books/scientific-software-design/CD0A2BA986E335E95D7FC91CF39BA30E)
    
