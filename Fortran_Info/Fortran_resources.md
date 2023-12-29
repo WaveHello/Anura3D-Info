@@ -22,6 +22,16 @@
 
 3) [Fortran 2023 - Added Features](https://wg5-fortran.org/N2151-N2200/N2194.pdf)
      * Info on the features being added to Fortran 2023 compared to 2018
+4) [Fortran Intrinsic Functions](https://fortranwiki.org/fortran/show/Intrinsic+procedures)
+   * Functions that you can you automatically in Fortrann
+   * Some notable ones include:
+     * **dot_product**: Calculates the dot produt of numeric or logical vectors [More Info](https://fortranwiki.org/fortran/show/dot_product)
+     * **norm2**: Calculates the Euclidean vector norm (L2 norm) of array along dimension dim. [More Info](https://fortranwiki.org/fortran/show/norm2)
+     * **matmul**: Performs matrix multiplication. Handles matrix*vector and matrix*matrix as long as one dimension is congruent it handles the 
+              determining the right order of multiplication for matrix*vector [More Info](https://gcc.gnu.org/onlinedocs/gfortran/MATMUL.html)
+
+
+<!------------------------------------------------------------- End of Fortran Documentation ---------------------------------------------------------->
 
 ## Fortran Add-Ons
 1) [FORtan Documenter (FORD)](https://github.com/Fortran-FOSS-Programmers/ford?tab=readme-ov-file)

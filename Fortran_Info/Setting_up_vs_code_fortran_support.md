@@ -36,3 +36,24 @@ Make sure you don't have
 1) fortran-language-server
 2) fprettify
 3) findent
+
+## Adding conda to path
+Need to add
+1) ```C:\Users\...your path...\anaconda3```
+2) ```C:\Users\...your path...\anaconda3\Scripts``
+
+to path
+
+On windows 
+1) go to environment variables
+2) Select Path in the upper screen and then select edit
+3) Add the two strings (with the modifcations for your computer) as two new enteries on the list
+4) Press Ok and your all done
+
+## Setting FORD
+### Using graphs
+To have FORD create graphs, [Graphviz](https://www.graphviz.org/) is required 
+I don't think the pip install worked all the way for me
+I needed to download the source files from the above website and add it to my path for all users
+
+There's some information on alternative processes [here](https://stackoverflow.com/questions/35064304/runtimeerror-make-sure-the-graphviz-executables-are-on-your-systems-path-aft?answertab=scoredesc#tab-top)
