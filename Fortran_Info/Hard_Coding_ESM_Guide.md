@@ -154,3 +154,41 @@ Figure 10. Specifying the DLL name as “None” for convenience.
 6)	Change the test below the $$MATERIAL_MODEL_SOLID flag to “Arb_Model”.
 7)	Save the changes to the .GOM file. No more edits to this file are needed.
 With that you’re done. You should now be able to use the hardcoded material model within Anura3D.
+
+## Updated Hardcoding instructions
+Instead of putting the ESM directly into the ```ExternalSoilModel.for``` file, these new instructions place the ESM in a seperate module. This helps with variables encapsilation and overall organization.
+
+1) Make a file in the src folder named ```ESM_"ArbModel".f90```
+
+<p align="center" width="100%">
+    <img width="30%" src="Images/Arb_Model_file.png" alt = "Screen shot of making the Arb model file">
+</p> 
+   
+2) Make a module named after your ESM. 
+<p align="center" width="100%">
+    <img width="50%" src="Images/Arb_Model_Module.png" alt = "Screen shot of making Arb_model_module">
+</p> 
+
+3) Copy and paste the **ESM**, **UMAT** and all other subroutines and functions required for the **ESM** in the module. An example for Mohr-Coulomb Strain softening is shown (Some subroutines and ```end module MOD_MCSS_ESM``` was not included in the screenshot due to space constraints in this markdown.)
+
+<p align="center" width="100%">
+    <img width="50%" src="Images/MOD_MCSS_ESM.png" alt = "Screen shot of MOD_MCSS_ESM">
+</p> 
+
+4) Make all of the subroutines private then make the MOD_DEMO_ESM public (See the above image).
+   * This prevents other modules from accidentally interfacing with the information in the ESM module
+   * For example when this module is used by the ExternalSoilModel module it can only access the ESM subroutine
+
+**Note**: Most likely the ESM and UMAT won't compile the first time because the implicit none at the top of the module overides any implicit type casting in the functions and subroutines required for the ESM_DEMO
+
+5) Close the  ESM_"ArbModel".f90. No more changes are required
+
+6) Open the ExternalSoilModel.for file.
+
+7) Add
+ ```Fortran
+ use MOD_MCSS_ESM, only: ESM_MohrCoulombStrainSoftening
+ ```
+ at the top of the file, with the other ```use``` statements. 
+ 
+ **Note:** The only specification denotes that only that specified subroutine (or if a function was selected that function). In this case, since all the other module procedures are private the ```only``` key-word isn't required. However, adding the only statement helps in the debugging process because it lets you immediatly figure out which procedures are being imported to the module of interest.

@@ -23,7 +23,7 @@
 3) [Fortran 2023 - Added Features](https://wg5-fortran.org/N2151-N2200/N2194.pdf)
      * Info on the features being added to Fortran 2023 compared to 2018
 4) [Fortran Intrinsic Functions](https://fortranwiki.org/fortran/show/Intrinsic+procedures)
-   * Functions that you can you automatically in Fortrann
+   * Functions that you can you automatically in Fortran
    * Some notable ones include:
      * **dot_product**: Calculates the dot produt of numeric or logical vectors [More Info](https://fortranwiki.org/fortran/show/dot_product)
      * **norm2**: Calculates the Euclidean vector norm (L2 norm) of array along dimension dim. [More Info](https://fortranwiki.org/fortran/show/norm2)
