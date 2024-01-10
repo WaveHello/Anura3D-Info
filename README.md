@@ -4,9 +4,6 @@ The purpose of this repo is to hold references and links to help the on-boarding
 # Folder Breakdown
 The folders are sectioned as follows:
 
-## Discord Info
-Contains information on using and modifying the Discord.
-
 ## Fortran Info 
 
 * Contains information on getting started with Fortran. Including links to books, websites and videos that are aimed at learning Fortran. Information on parallel computing and general coding is contained here.
