@@ -1,5 +1,5 @@
 # Purpose
-The purpose of this repo is to hold references and links to help the on-boarding and learning process of interacting with Anura3D.
+The purpose of this repo is to hold references and links to help the on-boarding and learning process of interacting with Anura3D. 
 
 # Folder Breakdown
 The folders are sectioned as follows:
