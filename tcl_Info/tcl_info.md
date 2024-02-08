@@ -25,3 +25,6 @@ if{$variable == "hello"}{
 
 Gid has a in house debugger for tcl that is extremly helpful when modifying the GiD problem type scripts.
 [Video: How to use GiD debugger](https://www.youtube.com/watch?v=G98cmhN8Jzk)
+
+##  Info on working with tcl and xml in GiD
+See [Gid xml and tcl info](https://downloads.gidsimulation.com/GiD_Documentation/Docs/GiD16/GiD_16_Customization_Manual.pdf) for  information
