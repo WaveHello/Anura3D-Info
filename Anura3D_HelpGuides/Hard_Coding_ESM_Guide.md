@@ -76,8 +76,8 @@ Figure 4. Snip of if statement to catch if the input name of the model is ESM_AR
 
 12)	Save the changes to the ExternalSoilModel.for file. No more edits to this file are needed.
 
-MPMConvPhase.for
-Purpose
+## MPMConvPhase.for
+###  Purpose
 The purpose of this modification is to add a condition for the ESM_ARB_Model so that the time step is calculated correctly. 
 Instructions
 1)	Open the MPMConvPhase.for file in Visual Studio. The MPMConvPhase files is in the “MPMModules” subfolder of the Anura3D solution.
