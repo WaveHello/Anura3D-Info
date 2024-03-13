@@ -35,3 +35,6 @@ A .sln file is typically associated with Microsoft Visual Studio and represents 
 - Test your code on Linux and debug any issues that arise during the compilation or execution process.
 
 Keep in mind that the process can be complex, and the level of effort depends on the complexity of your projects, the programming language used, and the dependencies involved. It's advisable to carefully review the documentation for the tools and libraries you are using and address any platform-specific considerations. Additionally, consider consulting platform-specific guidelines and best practices for the programming language you are working with.
+
+## Information on Compiling using Linux
+[https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2024-0/specifying-the-location-of-compiler-components.html](Information on setting up the intel compiler in a folder)
