@@ -18,3 +18,6 @@
 12. Number of stress integration iterations. A value of 1 to 100 is usually sufficient of Ortiz-Simo. I haven’t tested Abbo-Sloan as much, but it requires more iterations. Originally the number of iterations for Abbo-Sloan was 1000.
 
 13. Minimum pseudo-time step (Dt_min) for the Abbo-Sloan iterations. The original value was 1e-9. This value doesn’t need to be set if Ortiz-Simo integration is used.
+
+14. Coefficient in the eqn for the ```a``` parameter in the Abbo and Sloan hyperbolic MC approximation function. The equation is
+    ```a = this_coefficient * c * cot(\phi)```

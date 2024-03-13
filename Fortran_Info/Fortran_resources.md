@@ -63,6 +63,7 @@
         * [Formatting](#formatting) with [findent](https://github.com/gnikit/findent-pypi) or [fprettify](https://github.com/pseewald/fprettify)
         * [Code snippets](#snippets) (more can be defined by the user [see](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets)) 
         * See [Setting up vs-code-fortran-support](Setting_up_vs_code_fortran_support.md)
+Requires installing fortls using pip. fortls may automatically download for some users, but [here some info it doesn't](https://fortran-lang.discourse.group/t/fortls-installation-autocomplete-suggestions/4308)
 
 6) [Build Fotran Unit tests (test-drive)](https://github.com/fortran-lang/test-drive)
      * "This project offers a lightweight, procedural [unit testing](https://en.wikipedia.org/wiki/Unit_testing) framework based on nothing but standard Fortran. Integration with meson, cmake and Fortran package manager (fpm) is available. Alternatively, the testdrive.F90 source file can be redistributed in the project's testsuite as well."
