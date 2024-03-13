@@ -38,3 +38,5 @@ Keep in mind that the process can be complex, and the level of effort depends on
 
 ## Information on Compiling using Linux
 [https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2024-0/specifying-the-location-of-compiler-components.html](Information on setting up the intel compiler in a folder)
+
+As far as I can tell it is not possible to use Visual Studio to compile to a Linux computer. [[link](https://community.intel.com/t5/Intel-Fortran-Compiler/build-for-Linux-from-visual-studio/td-p/1101211)https://community.intel.com/t5/Intel-Fortran-Compiler/build-for-Linux-from-visual-studio/td-p/1101211](link to forum). I think the best procedure is make a makefile for the linux compiler. There is a package called "Linux Development with C++" available with C++ but there isn't an equivalent package for Fortran.
