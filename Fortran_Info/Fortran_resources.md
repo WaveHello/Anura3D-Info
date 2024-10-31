@@ -154,7 +154,8 @@ Requires installing fortls using pip. fortls may automatically download for some
 1) [Video - Damian Rouson Parallel Fortran](https://www.youtube.com/watch?v=IWHRuJ7D70I)
 
 <!------------------------------------------------------------- End of Parallel Computing ------------------------------------------------------------->
-
+## List of Fortran libaries
+[Fortran Wiki List of libraries](https://fortranwiki.org/fortran/show/Libraries)
 
 ## People to search for
 
